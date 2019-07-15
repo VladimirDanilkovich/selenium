@@ -13,7 +13,7 @@ jobs:
           POSTGRES_PASSWORD: ""
     steps:
       - checkout
-      - run: mkdir test-reports
+      - run: cd test-reports
       - run:
           name: Download Selenium
           command: |
