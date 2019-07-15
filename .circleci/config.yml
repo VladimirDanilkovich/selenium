@@ -48,7 +48,7 @@ jobs:
       
       - run:
           name: install-npm
-          command: npm install -g
+          command: npm install 
         
       # run tests!
       - run: 
