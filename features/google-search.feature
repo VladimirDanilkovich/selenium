@@ -11,4 +11,4 @@ Feature: Searching for vote cards app
   Scenario: Google search for course of life app
     When I search Google for "CourseOf.Life"
     Then I should see some results
-© 2019 GitHub, Inc.
+
