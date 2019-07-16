@@ -10,6 +10,9 @@ var cucumber = require('cucumber');
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
+const { Builder, By, Key, until } = require('selenium-webdriver')
+const assert = require('assert')
+
 describe('Test_1', function() {
   this.timeout(30000)
   let driver
@@ -48,7 +51,7 @@ describe('Test_1', function() {
     await driver.sleep(undefined)
     {
       const elements = await driver.findElements(By.css(".toast-error"))
-      assert(!elements.length)
+      assert(elements.length)
     }
   })
 })
