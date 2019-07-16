@@ -210,7 +210,7 @@
     "url": "git://github.com/john-doherty/selenium-cucumber-js.git"
   },
   "scripts": {
-    "test": "mocha index.js"
+    "test": "node index.js"
   },
   "version": "1.5.12",
   "warnings": [
@@ -227,7 +227,6 @@
         "node": "6.11.0"
       },
       "pkgid": "selenium-cucumber-js@1.5.12"
-    },
-    "
+    }
   ]
 }
