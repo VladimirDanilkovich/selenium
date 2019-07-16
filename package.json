@@ -203,14 +203,14 @@
     "bdd"
   ],
   "license": "ISC",
-  "main": "test.js",
+  "main": "index.js",
   "name": "selenium-cucumber-js",
   "repository": {
     "type": "git",
     "url": "git://github.com/john-doherty/selenium-cucumber-js.git"
   },
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha index.js"
   },
   "version": "1.5.12",
   "warnings": [
