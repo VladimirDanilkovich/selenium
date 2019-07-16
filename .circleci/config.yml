@@ -15,7 +15,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/selenium
+    working_directory: ~/repo
             
     steps:
       - checkout    
@@ -27,8 +27,8 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
      
-     
-     
+      - run: yarn install
+
       - save_cache:
           paths:
             - node_modules
@@ -47,13 +47,10 @@ jobs:
           command: docker run -d --rm --net grid -e HUB_HOST=selenium-hub -v /dev/shm:/dev/shm selenium/node-chrome:3.11.0
       
       - run:
-          name: install-mocha
-          command: npm install mocha 
-      - run:
           name: install-npm
           command: npm install
         
       # run tests!
       - run: 
           name: run tests
-          command: mocha index.js
+          command: node index.js
