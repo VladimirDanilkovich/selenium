@@ -10,8 +10,6 @@ var cucumber = require('cucumber');
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-const { Builder, By, Key, until } = require('selenium-webdriver')
-const assert = require('assert')
 
 describe('Test_1', function() {
   this.timeout(30000)
