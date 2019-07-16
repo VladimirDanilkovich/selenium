@@ -207,7 +207,7 @@
   "name": "selenium-cucumber-js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/john-doherty/selenium-cucumber-js.git"
+    "url": "git://github.com/VladimirDanilkovich/selenium.git"
   },
   
     "scripts": {
