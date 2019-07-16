@@ -2,7 +2,7 @@
 const { Builder, By, Key, until } = require('selenium-webdriver')
 const assert = require('assert')
 
-describe('JS', function() {
+describe('hellow word', function() {
   this.timeout(30000)
   let driver
   let vars
@@ -13,31 +13,7 @@ describe('JS', function() {
   afterEach(async function() {
     await driver.quit();
   })
-  it('JS', async function() {
+  it('hellow word', async function() {
+    await driver.get("https://circleci.com/docs/2.0/browser-testing/")
   })
 })
-{
-  "name": "code-export",
-    "version": "3.7.0",
-    "description": "Selenium IDE code export",
-    "repository": "https://github.com/SeleniumHQ/selenium-ide",
-    "keywords": [
-  "selenium",
-  "ide",
-  "export"
-],
-    "license": "Apache-2.0",
-    "private": true,
-    "scripts": {
-  "build": "babel -d dist src --ignore=__test__",
-      "watch": "yarn build -w"
-},
-  "main": "dist/index.js",
-    "devDependencies": {
-  "babel-cli": "^6.26.0",
-      "babel-preset-env": "^1.6.1"
-},
-  "dependencies": {
-  "code-export-java-junit": "^3.7.0"
-}
-}
