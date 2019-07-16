@@ -25,7 +25,7 @@ describe('Test_1', function() {
   it('Test_1', async function() {
     await driver.get("https://sciadev-scia.cs31.force.com/feedbackform")
     await driver.setRect(1440, 802)
-    await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
+    //await driver.findElement(By.xpath("//div/input")).sendKeys("Selenium")
     await driver.findElement(By.xpath("//div[2]/form-group/div/div/div/input")).sendKeys("Test")
     await driver.findElement(By.xpath("//select")).click()
     {
@@ -49,7 +49,7 @@ describe('Test_1', function() {
     await driver.sleep(undefined)
     {
       const elements = await driver.findElements(By.css(".toast-error"))
-      assert(elements.length)
+      assert(!elements.length)
     }
   })
 })
