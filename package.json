@@ -62,7 +62,7 @@
   "deprecated": false,
   "description": "JavaScript browser automation framework using official selenium-webdriver and cucumber-js",
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0"
   },
